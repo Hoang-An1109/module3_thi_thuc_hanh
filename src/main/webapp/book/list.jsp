@@ -13,9 +13,7 @@
 </head>
 <body>
 <h1 class="text-center mt-5">Book Management</h1>
-<%--<div class="text-center mb-3">--%>
-<%--    <a href="client?action=create" class="btn btn-primary">Add New Book</a>--%>
-<%--</div>--%>
+
 <div class="table-responsive">
     <caption><h2>List of Books</h2></caption>
     <table class="table table-bordered">
@@ -38,8 +36,7 @@
                 <td><c:out value="${book.description}"/></td>
                 <td><c:out value="${book.quanlity}"/></td>
                 <td>
-                    <a href="book?action=borrow&id=${book.id}" class="btn btn-info">Muon</a>
-<%--                    <a href="client?action=delete&id=${client.id_kh}" class="btn btn-danger">Delete</a>--%>
+                    <a href="borrowCard?action=create&id=${book.id}" class="btn btn-info">Muon</a>
                 </td>
             </tr>
         </c:forEach>
